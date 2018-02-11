@@ -17,4 +17,4 @@ def gather_data():
 
 
 if __name__ == "__main__":
-    print gather_data()
+    gather_data()
