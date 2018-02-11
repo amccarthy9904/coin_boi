@@ -14,3 +14,7 @@ def gather_data():
     for cur_map in result:
         rate_map[cur_map[u'pair']] = cur_map[u'rate']
     return rate_map
+
+
+if __name__ == "__main__":
+    print gather_data()
