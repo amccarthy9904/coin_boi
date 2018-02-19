@@ -12,9 +12,9 @@ def gather_data():
     r = requests.get("https://shapeshift.io/marketinfo")
     result = json.loads(r.text)
     for cur_map in result:
-        rate_map[cur_map[u'pair']] = cur_map[u'rate']
+        rate_map[cur_map[u'pair']] = cur_map
     return rate_map
 
 
 if __name__ == "__main__":
-    gather_data()
+    print(gather_data())

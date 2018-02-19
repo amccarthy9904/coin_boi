@@ -16,3 +16,7 @@ def sort_currency(coin):
     fees = filter(lambda x: "{}_".format(coin) in x[0], fee_map)
     fees.sort(key=lambda x: x[1])
     return fees, fees[0]
+
+
+if __name__ == "__main__":
+    print(sort_currency("NEO"))
